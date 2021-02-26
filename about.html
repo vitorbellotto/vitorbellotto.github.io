@@ -3,23 +3,26 @@
 	<head>
 		<title>Hello there, Im Vitor!</title>
                 <link rel="stylesheet" type="text/css" href="/css/main.css">
+	<script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous">
+        </script>
+        <script> 
+        $(function(){
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+                });
+        </script> 
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
+                <div id="header"></div>
 		<div class="container">
     		<div class="blurb">
         		<h1>Hi there, I'm Vitor Hugo Bellotto Zago!</h1>
 				<p>Some personal description.</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-		</footer>
+    		</div>
+		</div>
+                <div ="footer"></div>
 	</body>
 </html>
